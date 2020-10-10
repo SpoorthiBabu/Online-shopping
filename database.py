@@ -1,6 +1,5 @@
 import sqlite3
 
-
 conn = sqlite3.connect('mobileshopping.db')
 
 def brand_table():
@@ -80,14 +79,12 @@ def delboy_tab():
     locality varchar(20)
     );''')
 
-    c.execute("insert into DELIVERYBOY (name, phone, locality)  values ('Amar', 8776544836, 'Jayanagar');")
+    c.execute('''insert into DELIVERYBOY (name, phone, locality)  values ('Amar', 8776544836, 'Jayanagar');''')
     c.execute('''insert into DELIVERYBOY (name, phone, locality) values ('Akbar', 8777454836, 'Vijaynagar');''')
     c.execute('''insert into DELIVERYBOY (name, phone, locality) values ('Antony', 8274544836, 'TR Nagar');''')
     c.execute('''insert into DELIVERYBOY (name, phone, locality) values ('Harry', 877333836, 'Malleshwaram');''')
     c.execute('''insert into DELIVERYBOY (name, phone, locality) values ('John', 8783658836, 'Girinagar');''')
-    c.execute('''insert into DELIVERYBOY (name, phone, locality) values ('Chris', 8783657836, 'Other');''')
-
-    print("hi")
+    c.execute('''insert into DELIVERYBOY (name, phone, locality) values ('Chris', 8783657836, 'Other');''')   
 
     
 def del_details():
